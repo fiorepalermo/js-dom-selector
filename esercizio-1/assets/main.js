@@ -1,7 +1,7 @@
 console.log("js caricato");
 
 
-const button = document.querySelector('aggiungi');
+const button = document.querySelector('#aggiungi');
 const input = document.getElementById('#nuovoArticolo');
 const list = document.querySelector('#lista');
 
