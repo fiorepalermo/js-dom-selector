@@ -1,20 +1,23 @@
 console.log("js caricato");
 
 
-const button = document.querySelector('aggiungi');
+
+const button = document.getElementById('#aggiungi');
 const input = document.getElementById('#nuovoArticolo');
-const list = document.querySelector('#lista');
+const list = document.getElementById('#lista');
 
 button.addEventListener("click", function () {
-    const inputValue = input.value;
-    if (inputValue.lenght === 0) {
+
+    if (inputValue.length === 0) {
         return;
     }
+
     const newItem = document.createElement('li');
     newItem.textContent = inputValue;
+    list.append(newItem);
     console.log(inputValue);
     input.value = "";
     input.focus();
-})
+});
 
 
